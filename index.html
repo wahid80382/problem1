@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>A small project</h1>
+    <input type="text" id="firstName" placeholder="Enter the First Name ">
+    <input type="text" id="lastName" placeholder="Enter the Last Name ">
+    <input type="text" id="SurName" placeholder="Enter the Sur Name ">
+    <button id="name" onclick="name()">click Here</button>
+    <h4>Full Name:</h4>
+    <h5 id="fullName"></h5>
+    <h4>This Name Length:</h2>
+    <h5 id="lengthName"></h5>
+    <h4>This Name 2nd position value:</h4>
+    <h5 id="charAtName"></h5>
+    <h4>Slice This Name and show a beautiful name:</h4>
+    <h5 id="Name"></h5>
+ 
+    <script >
+        function name(){
+    let fname = document.getElementById("firstName");
+    let lname = document.getElementById("lastName").value;
+    let Sname = document.getElementById("SurName").value;
+    let name = fname.concat(lname);
+    let fullName =  name.concat(Sname);
+    let full_name = fname.toUpperCase();
+    document.getElementById("fullName").innerHTML = full_name;
+    let lengthName = fname.length;
+    document.getElementById(`lengthName`).innerHTML = fname;
+    let charAtName = fname.charAt(2);
+    document.getElementById(`charAtName`).innerHTML = charAtName;
+    let sliceName = fname.slice(5);
+    document.getElementById(`Name`).innerHTML = sliceName;
+}
+    </script>
+</body>
+</html>

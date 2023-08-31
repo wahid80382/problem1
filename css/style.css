@@ -1,8 +1,59 @@
-#input{
-    width: 250px;
-    height: 30px;
+*{
+    padding:0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
-#charAt{
-    width: 250px;
-    height: 30px;
+.container{
+    width:1170px;
+    margin: 0 auto;
+}
+#area{
+    text-align: center;
+    padding: 20px;
+    background-color: aquamarine;
+   
+}
+h1{
+    
+    color: cadetblue;
+    text-transform: capitalize;
+    font-size: 50px;
+    
+}
+h2{
+    display: inline-block;
+    font-size: 23px;
+    font-size: 30px;
+    margin: 10px 10px 0 0;
+    color: rgb(87, 197, 197);
+}
+#height_H2{
+    margin: 10px 0 0 0;
+}
+
+select,input{
+    width:200px;
+    height:35px;
+    text-align: center;
+    font-size: 23px;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid;
+}
+#btn{
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: none;
+    background-color: darkcyan;
+    color: azure;
+    margin: 10px ;
+    cursor: pointer;
+}
+#Area_Result{
+    font-size: 30px;
+    font-weight: 600;
+    color: cadetblue;
 }
